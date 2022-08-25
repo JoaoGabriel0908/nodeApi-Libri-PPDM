@@ -1,0 +1,21 @@
+{
+  "name": "api-libri",
+  "version": "1.0.0",
+  "description": "API Rest para gerenciar o app de livros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "book",
+    "senai",
+    "jandira"
+  ],
+  "author": "João",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
