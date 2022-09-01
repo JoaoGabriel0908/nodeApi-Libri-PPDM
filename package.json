@@ -13,9 +13,11 @@
     "senai",
     "jandira"
   ],
-  "author": "João",
+  "author": "João Gabriel Costa Flor",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.4"
   }
 }

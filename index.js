@@ -1,16 +1,15 @@
+//Recebe uma importação do próprio express
 const express = require('express')
 
+// Criando uma instância e passa para o APP que executa o express
 const app = express();
 
-// Rota GET de teste
-app.get('/', function(req, res) {
-    res.send('RESPOSTA DA ROTA RAIZ')
-})
+app.use(express.json())
 
-// Rota GET de listagem de dentistas
-app.get('/listagemDentistas', function(req, res) {
-    res.send('RESPOSTA DA ROTA DE LISTAGENS DE DENTISTAS')
-})
+// IMPORTAÇÃO DO ARQUIVOS DE ROTAS LIVROS
+const livrosController = require('./controller/LivroController');
+
+app.use('/', livrosController)
 
 // Colocando o serviço para rodar na porta 3000
 app.listen(3000, () => {console.log('Aplicação rodando em - http://localhost:3000')});
