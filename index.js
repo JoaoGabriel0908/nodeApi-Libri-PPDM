@@ -9,6 +9,7 @@ app.use(express.json())
 // IMPORTAÇÃO DO ARQUIVOS DE ROTAS LIVROS
 const livrosController = require('./controller/LivroController');
 
+// Passando as rotas pelo listaController que faz ons endpoints
 app.use('/', livrosController)
 
 // Colocando o serviço para rodar na porta 3000
